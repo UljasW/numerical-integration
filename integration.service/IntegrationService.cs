@@ -35,7 +35,7 @@ public class IntegrationService
             decimal a = (y3 - y1) / (x3 * x3 - x1 * x1 + (y1 - x1 * x1) / (b + 1));
             decimal c = (y1 - a * (x1 * x1)) / (b + 1);
 
-            //integrate parabolic function between 1 and second point
+            //integrate parabolic function between first and second point
             decimal G1 = a * (x1 * x1 * x1) / 3 + b * x1 * c + c * x1;
             decimal G2 = a * (x3 * x3 * x3) / 3 + b * x3 * c + c * x3;
             return G2 - G1;
