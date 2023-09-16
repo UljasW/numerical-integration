@@ -4,9 +4,15 @@ using integration.service;
 
 
 var interator = new IntegrationService();
-decimal result = interator.IntegrateBetween((decimal)0.01,-2,2,f);
+decimal result = interator.IntegrateBetween((decimal)0.01,10,200,g);
 Console.WriteLine($"Approximate integral: {result}");
 decimal f(decimal x){
     decimal y = 5*x*(decimal)Math.Sin((double)x);
+    return y;
+}
+
+decimal g(decimal x)
+{
+    decimal y = 4*x*x*x;
     return y;
 }

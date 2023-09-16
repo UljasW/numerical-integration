@@ -11,6 +11,7 @@ public class IntegrationService
         for (decimal i = a; i < b; i += accuracy)
         {
             sum += findG(i, accuracy, f, prevG);
+            Console.WriteLine(sum);
             prevG = sum;
         }
 
@@ -33,12 +34,12 @@ public class IntegrationService
             //calculate the coefficients in the parabolic function using substitution method
             decimal b = FindB(x1, y1, y2, x3, y3, x2);
             decimal a = (y3 - y1) / (x3 * x3 - x1 * x1 + (y1 - x1 * x1) / (b + 1));
-            decimal c = (y1 - a * (x1 * x1)) / (b + 1);
+            decimal c = (y1 - a * x1 * x1) / (b + 1);
 
             //integrate parabolic function between first and second point
-            decimal G1 = a * (x1 * x1 * x1) / 3 + b * x1 * c + c * x1;
-            decimal G2 = a * (x3 * x3 * x3) / 3 + b * x3 * c + c * x3;
-            return G2 - G1;
+            decimal g1 = a * x1 * x1 * x1 / 3 + b * x1 * c + c * x1;
+            decimal g2 = a * x3 * x3 * x3 / 3 + b * x3 * c + c * x3;
+            return g2 - g1;
         }
         catch (Exception e)
         {
@@ -54,6 +55,5 @@ public class IntegrationService
         decimal denominator =
             -(x2 * x2 * y1) + x3 * x3 * y1 + x1 * x1 * y2 - x3 * x3 * y2 - x1 * x1 * y3 + x2 * x2 * y3;
         return numerator / denominator;
-        ;
     }
 }
