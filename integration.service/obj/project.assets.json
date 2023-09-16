@@ -8,32 +8,24 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\21ulwe\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/uljaswennstrom/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\21ulwe\\Programmering\\numerical-integration\\integration.service\\integration.service.csproj",
+      "projectUniqueName": "/Users/uljaswennstrom/Developer/numerical-integration/integration.service/integration.service.csproj",
       "projectName": "integration.service",
-      "projectPath": "C:\\Users\\21ulwe\\Programmering\\numerical-integration\\integration.service\\integration.service.csproj",
-      "packagesPath": "C:\\Users\\21ulwe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\21ulwe\\Programmering\\numerical-integration\\integration.service\\obj\\",
+      "projectPath": "/Users/uljaswennstrom/Developer/numerical-integration/integration.service/integration.service.csproj",
+      "packagesPath": "/Users/uljaswennstrom/.nuget/packages/",
+      "outputPath": "/Users/uljaswennstrom/Developer/numerical-integration/integration.service/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\21ulwe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/uljaswennstrom/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -67,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }

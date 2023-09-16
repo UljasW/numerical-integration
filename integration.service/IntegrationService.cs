@@ -1,49 +1,61 @@
 ﻿namespace integration.service;
 public class IntegrationService
 {
-    public float IntegrateBetween(float accuracy ,float a, float b, Func<float, float> f){
+    public decimal IntegrateBetween(decimal accuracy, decimal a, decimal b, Func<decimal, decimal> f)
+    {
 
-        float sum = 0;
+        decimal sum = 0;
 
-        for (float i = a; i < b; i += accuracy)
+        for (decimal i = a; i < b; i += accuracy)
         {
-            sum += findG(i,accuracy,f);
+            sum += findG(i, accuracy, f);
         }
 
-        return 0;
+        return sum;
     }
 
-    private float findG(float i, float accuracy, Func<float, float> f){
-
-        float x1 = i;
-        float x2 = i+(accuracy/2);
-        float x3 = i+accuracy;
-
-
-        float y1 = f(x1);
-        float y2 = f(x2);
-        float y3 = f(x3);
+    private decimal findG(decimal i, decimal accuracy, Func<decimal, decimal> f)
+    {
+        try
+        {
+            decimal x1 = i;
+            decimal x2 = i + (accuracy / 2);
+            decimal x3 = i + accuracy;
 
 
-        float c (float a, float b){
-           return (y1-a*x1*x1)/(b+1);
+            decimal y1 = f(x1);
+            decimal y2 = f(x2);
+            decimal y3 = f(x3);
+
+ 
+            decimal numerator = x1 * x1 * y1 + x2 * x2 * y1 - x3 * x3 * y1 - y1 * y1 - 2 * x1 * x1 * y2 + x3 * x3 * y2 + y1 * y2 + x1 * x1 * y3 - x2 * x2 * y3;
+            decimal denominator = -(x2 * x2 * y1) + x3 * x3 * y1 + x1 * x1 * y2 - x3 * x3 * y2 - x1 * x1 * y3 + x2 * x2 * y3;
+
+            System.Console.WriteLine(numerator);
+            System.Console.WriteLine(denominator);
+
+            decimal b = numerator / denominator;
+
+        
+
+            decimal a = (y3 - y1) / (x3 * x3 - x1 * x1 + (y1 - x1 * x1) / (b + 1));
+
+            decimal c = (y1 - a * (x1 * x1)) / (b + 1);
+
+
+            decimal G1 = a * (x1 * x1 * x1) / 3 + b * x1 * c + c * x1;
+
+            decimal G2 = a * (x3 * x3 * x3) / 3 + b * x3 * c + c * x3;
+
+
+            return G2 - G1;
         }
-
-
-
-
-
-        //a=(bc+c)/x^2
-        //b=((-ax^2-c)/c)
-        //c=((y-ax^2)/(b+1))
-
-
-
-
-
-
-        return 0;
+        catch (Exception e)
+        {
+            return 0;
+        }
+        
 
     }
-    
+
 }

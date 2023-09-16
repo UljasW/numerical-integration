@@ -6,10 +6,9 @@ using integration.service;
 IntegrationService interator = new IntegrationService();
 
 
-System.Console.WriteLine(interator.IntegrateBetween(0.05f,2,5,f));
-
-
-float f(float x){
-    float y = x;
+decimal result = interator.IntegrateBetween((decimal)0.1,2,5,f);
+Console.WriteLine($"Approximate integral: {result}");
+decimal f(decimal x){
+    decimal y = x*10;
     return y;
 }
