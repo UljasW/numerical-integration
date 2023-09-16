@@ -3,12 +3,10 @@ using System.Runtime.CompilerServices;
 using integration.service;
 
 
-IntegrationService interator = new IntegrationService();
-
-
-decimal result = interator.IntegrateBetween((decimal)0.1,2,5,f);
+var interator = new IntegrationService();
+decimal result = interator.IntegrateBetween((decimal)0.01,-2,2,f);
 Console.WriteLine($"Approximate integral: {result}");
 decimal f(decimal x){
-    decimal y = x*10;
+    decimal y = 5*x*(decimal)Math.Sin((double)x);
     return y;
 }
