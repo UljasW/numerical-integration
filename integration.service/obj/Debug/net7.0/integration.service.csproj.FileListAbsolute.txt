@@ -1,0 +1,11 @@
+/Users/uljaswennstrom/Developer/numerical-integration/integration.service/bin/Debug/net7.0/integration.service.deps.json
+/Users/uljaswennstrom/Developer/numerical-integration/integration.service/bin/Debug/net7.0/integration.service.dll
+/Users/uljaswennstrom/Developer/numerical-integration/integration.service/bin/Debug/net7.0/integration.service.pdb
+/Users/uljaswennstrom/Developer/numerical-integration/integration.service/obj/Debug/net7.0/integration.service.GeneratedMSBuildEditorConfig.editorconfig
+/Users/uljaswennstrom/Developer/numerical-integration/integration.service/obj/Debug/net7.0/integration.service.AssemblyInfoInputs.cache
+/Users/uljaswennstrom/Developer/numerical-integration/integration.service/obj/Debug/net7.0/integration.service.AssemblyInfo.cs
+/Users/uljaswennstrom/Developer/numerical-integration/integration.service/obj/Debug/net7.0/integration.service.csproj.CoreCompileInputs.cache
+/Users/uljaswennstrom/Developer/numerical-integration/integration.service/obj/Debug/net7.0/integration.service.dll
+/Users/uljaswennstrom/Developer/numerical-integration/integration.service/obj/Debug/net7.0/refint/integration.service.dll
+/Users/uljaswennstrom/Developer/numerical-integration/integration.service/obj/Debug/net7.0/integration.service.pdb
+/Users/uljaswennstrom/Developer/numerical-integration/integration.service/obj/Debug/net7.0/ref/integration.service.dll
