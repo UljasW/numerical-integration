@@ -10,7 +10,7 @@ public class IntegrationService
 
         for (decimal i = a; i < b; i += accuracy)
         {
-            sum += findG(i, accuracy, f, prevG);
+            sum += FindG(i, accuracy, f, prevG);
             Console.WriteLine(sum);
             prevG = sum;
         }
@@ -18,7 +18,7 @@ public class IntegrationService
         return sum;
     }
 
-    private decimal findG(decimal i, decimal accuracy, Func<decimal, decimal> f, decimal prevG)
+    private decimal FindG(decimal i, decimal accuracy, Func<decimal, decimal> f, decimal prevG)
     {
         try
         {
@@ -41,7 +41,7 @@ public class IntegrationService
             decimal g2 = a * x3 * x3 * x3 / 3 + b * x3 * c + c * x3;
             return g2 - g1;
         }
-        catch (Exception e)
+        catch (Exception)
         {
             //if value is undefined return previous value
             return prevG;
