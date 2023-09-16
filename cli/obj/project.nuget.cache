@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/SqQ5kmwRuJp71dPJXCwKJhOIRUFJT6G3v30fhljc2rxzte5n1UcRawiuqOHMhHHIMl78GdM6+d7PqwV/k1o9g==",
+  "dgSpecHash": "nFkXaR1ETxlkLPP5wVu7LmlffqXTs/mXslY8Bbz3wFv5xHVWOu6V6AgnDGoIW4ncOq95Qo5H1mhkxmVXaROVrA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\21ulwe\\Programmering\\numerical-integration\\cli\\cli.csproj",
+  "projectFilePath": "/Users/uljaswennstrom/Developer/numerical-integration/cli/cli.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
