@@ -1,4 +1,6 @@
-﻿namespace integration.service;
+﻿using System.Xml.XPath;
+
+namespace integration.service;
 
 public class IntegrationService
 {
@@ -10,9 +12,10 @@ public class IntegrationService
 
         for (decimal i = a; i < b; i += accuracy)
         {
-            sum += FindG(i, accuracy, f, prevG);
+            decimal G = FindG(i, accuracy, f, prevG);;
+            sum += G;
             Console.WriteLine(sum);
-            prevG = sum;
+            prevG = G;
         }
 
         return sum;
